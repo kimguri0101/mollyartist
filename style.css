@@ -22,7 +22,7 @@ html {
             height: 64px;
             border-radius: 60px;
             width: 774px;
-            background-color: #000000;
+            background-color: #B6E424;
             color: #ffffff;
 
           z-index: 100;
@@ -76,7 +76,10 @@ container{
     align-items: center;
     position: relative;
 }
-
+.mySlides{
+    height: 600px;
+    width: auto;
+}
 
 section{
     padding: 100px 70px ;
@@ -148,14 +151,14 @@ section{
         }
         .box{
             background: linear-gradient(112.11deg, #ffffff 0%, #E6EAFF 100%);
-
+            overflow: hidden;
             border-radius: 50px;
             position: relative;
             display: flex;
             align-items: center;
             background-color: aqua;
             width: 1048px;
-
+            border: solid 4px #B6E424;
             height: 218px;
             margin-bottom: 20px;
         }
@@ -165,6 +168,29 @@ section{
             right: 0;
            
         }
+        .title_move{
+            overflow: hidden;
+            border: solid 8px #B6E424;
+        }
+        .title_list{
+            height: 100%;
+            overflow: hidden;
+            display: flex;
+            gap: 16px;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .title_list h1{
+            color: #8C8C8C;
+            font-size: 16px;
+        }
+        .title_list h2{
+            font-size: 30px;
+        }
+        .title_list h3{
+            font-size: 18px;
+        }
+
         .fixed_box p{
             padding: 20px;
             width: 460px;
@@ -294,12 +320,17 @@ section{
 .pic{
     
     position: relative;
-    width: 300px;
+    width: 320px;
     height: 460px;
     background-color: #000000;
     border-radius: 40px;
     margin: 0 30px 0 52px;
     z-index: 10;
+    overflow: hidden;
+}
+.pic img{
+    width: 320px;
+    height: auto;
 }
 .works h2{
     font-size: 62px;
@@ -387,4 +418,7 @@ section{
     background: linear-gradient(112.11deg, #FFF8F2 0%, #FFEDE2 100%);
     transform: translateX(0px);
     transition: all 0.3s ease-in;
+}
+#blank{
+    height: 100px;
 }
